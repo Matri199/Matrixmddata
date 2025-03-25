@@ -158,9 +158,9 @@ let vote = db.data.others.vote = []
 let kuismath = db.data.game.math = []
 
 //time
-const xtime = moment.tz('Africa/Accra').format('HH:mm:ss')
-const xdate = moment.tz('Africa/Accra').format('DD/MM/YYYY')
-const time2 = moment().tz('Africa/Accra').format('HH:mm:ss')  
+const xtime = moment.tz('Africa/Lagos').format('HH:mm:ss')
+const xdate = moment.tz('Africa/Lagos').format('DD/MM/YYYY')
+const time2 = moment().tz('Africa/Lagos').format('HH:mm:ss')  
 if(time2 < "23:59:00"){
 var xeonytimewisher = `🌌 *Good Night! Nighty night!*`
  }
@@ -401,13 +401,13 @@ forwardingScore: 999,
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
 newsletterName: "MATRIX-PRO-V2",
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {  
 showAdAttribution: true,
 title: botname,
 body: 'Enjoy unlimited features 🫠🫠',
-thumbnailUrl: 'https://files.catbox.moe/mpuia4.jpeg',
+thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
 sourceUrl: websitex
 },
 },
@@ -1652,7 +1652,7 @@ forwardingScore: 2025,
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
 newsletterName: "MATRIX-PRO-V2",
-newsletterJid: "120363418832323880@newsletter",},
+newsletterJid: "120363287352245413@newsletter",},
      externalAdReply: {
      showAdAttribution: true,
      title: `${botname}`,
@@ -1678,7 +1678,7 @@ try {
     const apiUrl = `https://apis.davidcyriltech.my.id/flux?prompt=${encodeURIComponent(text)}`;
  await EliteProEmpire.sendMessage(m.chat, {
       image: { url: apiUrl },
-      caption: `👨‍💻 *Flux Image Generator*\n\n📦 *Prompt:* ${text}\n> *𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱𝐏𝐫𝐨*`,
+      caption: `👨‍💻 *Flux Image Generator*\n\n📦 *Prompt:* ${text}\n> *Powered By Matrix*`,
     }, { quoted: m });
   } catch (error) {
     console.error('Error in Flux command:', error);
@@ -1705,7 +1705,7 @@ try {
                 document: { url: downloadLink },
                 mimetype: mimeType,
                 fileName: fileName,
-                caption: `📦 *File Name:* ${fileName}\n> *𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐌𝐀𝐓𝐑𝐈𝐗𝐏𝐑𝐎*`
+                caption: `📦 *File Name:* ${fileName}\n> *Powered By Matrix*`
             }, { quoted: m });
         } else {
 
@@ -1736,7 +1736,7 @@ case 'ytmp3': {
     }
     
     const body = `╭━━━━━━━━━\n` +
-  `┃ *ELITEPRO MUSIC - DOWNLOADER*\n` +
+  `┃ *MATRIXPRO MUSIC - DOWNLOADER*\n` +
   `> *ᴛɪᴛʟᴇ:* ${video.title}\n` +
   `┃ *ᴠɪᴇᴡꜱ:* ${video.views}\n` +
   `┃ *ᴅᴜʀᴀᴛɪᴏɴ:* ${video.timestamp}\n` +
@@ -1744,7 +1744,7 @@ case 'ytmp3': {
   `> *ᴜʀʟ:* ${video.url}\n` +
   `┃ *Enjoy your music®*\n` +
   `╰━━━━━━━━━━━━━━━━━━┈⊷\n` +
-  `> *𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 𝙈𝘼𝙏𝙍𝙄𝙓𝙋𝙍𝙊*`;
+  `> *Powered By Matrix*`;
     
     await EliteProEmpire.sendMessage(m.chat, {
       image: { url: video.thumbnail },
@@ -1798,7 +1798,7 @@ case 'play': {
     }
     
     const body = `╭━━━━━━━━━\n` +
-  `┃ *𝐌𝐀𝐓𝐑𝐈𝐗𝐏𝐑𝐎 𝐌𝐔𝐒𝐈𝐂 - 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑*\n` +
+  `┃ *MATRIX MUSIC - DOWNLOADER*\n` +
   `> *ᴛɪᴛʟᴇ:* ${video.title}\n` +
   `┃ *ᴠɪᴇᴡꜱ:* ${video.views}\n` +
   `┃ *ᴅᴜʀᴀᴛɪᴏɴ:* ${video.timestamp}\n` +
@@ -1806,7 +1806,7 @@ case 'play': {
   `> *ᴜʀʟ:* ${video.url}\n` +
   `┃ *Enjoy your music®*\n` +
   `╰━━━━━━━━━━━━━━━━━━┈⊷\n` +
-  `> *𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐌𝐀𝐓𝐑𝐈𝐗𝐏𝐑𝐎*`;
+  `> *Powered By Matrix*`;
   
     // Send video information with thumbnail
     await EliteProEmpire.sendMessage(m.chat, {
@@ -1851,7 +1851,7 @@ case 'ytmp4': {
     let video = search.all[0];
     
     let body = `╭━━━━━━━━━\n` +
-  `┃ *ELITEPRO VIDEO - DOWNLOADER*\n` +
+  `┃ *MATRIX VIDEO - DOWNLOADER*\n` +
   `> *ᴛɪᴛʟᴇ:* ${video.title}\n` +
   `┃ *ᴠɪᴇᴡꜱ:* ${video.views}\n` +
   `┃ *ᴅᴜʀᴀᴛɪᴏɴ:* ${video.timestamp}\n` +
@@ -1859,7 +1859,7 @@ case 'ytmp4': {
   `> *ᴜʀʟ:* ${video.url}\n` +
   `┃ *Enjoy your video®*\n` +
   `╰━━━━━━━━━━━━━━━━━━┈⊷\n` +
-  `> *𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐌𝐀𝐓𝐑𝐈𝐗𝐏𝐑𝐎*`;
+  `> *Powered By Matrix*`;
     
     await EliteProEmpire.sendMessage(m.chat, {
       image: { url: video.thumbnail },
@@ -1880,7 +1880,7 @@ case 'ytmp4': {
       await EliteProEmpire.sendMessage(m.chat, {
         video: { url: downloadUrl },
         mimetype: 'video/mp4',
-        caption: `🎬 *Title:* ${video.title}\n> *𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 𝙈𝘼𝙏𝙍𝙄𝙓𝙋𝙍𝙊*`
+        caption: `🎬 *Title:* ${video.title}\n> *Powered By Matrix*`
       }, { quoted: m });
     } else {
       reply(`*An error occurred while downloading the video.*`);
@@ -1903,7 +1903,7 @@ case 'video': {
     let video = search.all[0];
     
       let body = `╭━━━━━━━━━\n` +
-      `┃ *MATRIXPRO VIDEO - DOWNLOADER*\n` +
+      `┃ *MATRIX VIDEO - DOWNLOADER*\n` +
       `> *ᴛɪᴛʟᴇ:* ${video.title}\n` +
       `┃ *ᴠɪᴇᴡꜱ:* ${video.views}\n` +
       `┃ *ᴅᴜʀᴀᴛɪᴏɴ:* ${video.timestamp}\n` +
@@ -1911,7 +1911,7 @@ case 'video': {
       `> *ᴜʀʟ:* ${video.url}\n` +
       `┃ *Enjoy your video®*\n` +
       `╰━━━━━━━━━━━━━━━━━━┈⊷\n` +
-      `> *𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙔 𝙈𝙖𝙩𝙧𝙞𝙭𝙋𝙧𝙤*`;  
+      `> *Powered By Matrix*`;  
     
     await EliteProEmpire.sendMessage(m.chat, {
       image: { url: video.thumbnail },
@@ -1932,7 +1932,7 @@ case 'video': {
       await EliteProEmpire.sendMessage(m.chat, {
         video: { url: download_url },
         mimetype: 'video/mp4',
-        caption: `🎬 *Title:* ${title}\n> *𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 𝙈𝙖𝙩𝙧𝙞𝙭𝙋𝙧𝙤*`
+        caption: `🎬 *Title:* ${title}\n> *Powered By Matrix*`
       }, { quoted: m });
     } else {
       reply(`*Error fetching the video! Please try again later.*`);
@@ -1969,7 +1969,7 @@ case 'instagram': {
             video: { url: high_quality },
             mimetype: 'video/mp4',
             fileName: `${title}_HD.mp4`,
-            caption: `🎥 *Title:* ${title}\n*Quality:* HD\n> *𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 𝙈𝙖𝙩𝙧𝙞𝙭𝙋𝙧𝙤*`
+            caption: `🎥 *Title:* ${title}\n*Quality:* HD\n> *Powered By Matrix*`
           }, { quoted: m });
         }
         if (isDirectDownloadSD) {
@@ -1977,7 +1977,7 @@ case 'instagram': {
             video: { url: low_quality },
             mimetype: 'video/mp4',
             fileName: `${title}_SD.mp4`,
-            caption: `🎥 *Title:* ${title}\n*Quality:* SD\n> *𝘗𝘖𝘞𝘌𝘙𝘌𝘋 𝘉𝘠 𝘔𝘈𝘛𝘙𝘐𝘟𝘗𝘙𝘖*`
+            caption: `🎥 *Title:* ${title}\n*Quality:* SD\n> *Powered By Matrix*`
           }, { quoted: m });
         }
       } else {
@@ -1992,7 +1992,7 @@ case 'instagram': {
             video: Buffer.from(hdBuffer.data),
             mimetype: 'video/mp4',
             fileName: `${title}_HD.mp4`,
-            caption: `🎥 *Title:* ${title}\n*Quality:* HD\n> *𝘗𝘖𝘞𝘌𝘙𝘌𝘋 𝘉𝘠 𝘔𝘈𝘛𝘙𝘐𝘟𝘗𝘙𝘖*`
+            caption: `🎥 *Title:* ${title}\n*Quality:* HD\n> *Powered By Matrix*`
           }, { quoted: m });
         }
         if (low_quality) {
@@ -2000,7 +2000,7 @@ case 'instagram': {
             video: Buffer.from(sdBuffer.data),
             mimetype: 'video/mp4',
             fileName: `${title}_SD.mp4`,
-            caption: `🎥 *Title:* ${title}\n*Quality:* SD\n> *𝘗𝘖𝘞𝘌𝘙𝘌𝘋 𝘉𝘠 𝘔𝘈𝘛𝘙𝘐𝘟𝘗𝘙𝘖*`
+            caption: `🎥 *Title:* ${title}\n*Quality:* SD\n> *Powered By Matrix*`
           }, { quoted: m });
         }
       }
@@ -2085,7 +2085,7 @@ Once your done creating and verifying the two account, move over to the next ste
 
 *NEXT STEPS*
 Next step is to fork the bot repository. Click the link
-https://github.com/elite-md/ELITE-PRO-V2
+https://github.com/Matri199/Matrixmddata
 
 Then download the zip file.
 
@@ -2101,13 +2101,13 @@ Upload your bot code you have downloaded
 Start server Enjoy 😉
 
 *Watch:*
-https://youtube.com/shorts/-OU0QJY_uCM?si=Ww0uR0a3S21vN6Yy`,
+https://youtu.be/_huX4r3hIUc?si=QypokRQ6fpFeb9Ee`,
    contextInfo: {
 forwardingScore: 2025,
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
 newsletterName: "MATRIX-PRO-V2",
-newsletterJid: "120363418832323880@newsletter",},     
+newsletterJid: "120363287352245413@newsletter",},     
     externalAdReply: {
     showAdAttribution: true,
     title: `${botname}`,
@@ -2171,7 +2171,7 @@ forwardingScore: 2025,
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
 newsletterName: "MATRIX-PRO-V2",
-newsletterJid: "120363418832323880@newsletter",},    externalAdReply: {
+newsletterJid: "120363287352245413@newsletter",},    externalAdReply: {
       showAdAttribution: true,
       title: `${botname}`,
       body: `Click here for latest panel details`,
@@ -2205,7 +2205,7 @@ case 'apk': {
       image: { url: thumbnail },
       caption: `📥 *APK Downloader* 📥\n` +
         `📌 *Name:* ${apk_name}\n` +
-        `> *𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 𝙈𝙖𝙩𝙧𝙞𝙭𝙋𝙧𝙤*`
+        `> *Powered By Matrix*`
     }, { quoted: m });
 
     // Send APK file immediately after
@@ -2259,13 +2259,13 @@ forwardingScore: 999,
  isForwarded: true,
   forwardedNewsletterMessageInfo: {
     newsletterName: "MATRIX-PRO-V2",
-    newsletterJid: "120363418832323880@newsletter",
+    newsletterJid: "120363287352245413@newsletter",
   },        
         externalAdReply: {
           showAdAttribution: true,
           title: "Message: MATRIXPRO IS ALIVE",
           body: "Tap here to join our channel",
-          thumbnailUrl: 'https://files.catbox.moe/mpuia4.jpeg', // Replace with your thumbnail URL
+          thumbnailUrl: 'https://i.ibb.co/CNFGVhK/20250204-154801.jpg', // Replace with your thumbnail URL
           sourceUrl: wagc, // Replace with your channel link
           mediaType: 1,
           renderLargerThumbnail: false
@@ -2284,7 +2284,7 @@ case 'song': {
   if (!text) return reply(`*Example*: ${prefix + command} Faded by Alan Walker`);
   
   try {
-    await MatrixProEmpire.sendMessage(m.chat, { react: { text: `🎶`, key: m.key } });
+    await EliteProEmpire.sendMessage(m.chat, { react: { text: `🎶`, key: m.key } });
     
     const yts = require("yt-search");
     const axios = require("axios");
@@ -2297,7 +2297,7 @@ case 'song': {
     }
     
     const body = `╭━━━━━━━━━\n` +
-      `┃ *MATRIXPRO SONGS - DOWNLOADER*\n` +
+      `┃ *MATRIX SONGS - DOWNLOADER*\n` +
       `> *ᴛɪᴛʟᴇ:* ${video.title}\n` +
       `┃ *ᴠɪᴇᴡꜱ:* ${video.views}\n` +
       `┃ *ᴅᴜʀᴀᴛɪᴏɴ:* ${video.timestamp}\n` +
@@ -2305,9 +2305,9 @@ case 'song': {
       `> *ᴜʀʟ:* ${video.url}\n` +
       `┃ *Enjoy your music®*\n` +
       `╰━━━━━━━━━━━━━━━━━━┈⊷\n` +
-      `> *𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 𝙈𝘼𝙏𝙍𝙄𝙓𝙋𝙍𝙊*`;
+      `> *Powered By Matrix*`;
     
-    await MatrixProEmpire.sendMessage(m.chat, {
+    await EliteProEmpire.sendMessage(m.chat, {
       image: { url: video.thumbnail },
       caption: body
     }, { quoted: m });
@@ -2322,7 +2322,7 @@ case 'song': {
         document: { url: download_url }, // Sending as a document
         mimetype: 'audio/mpeg', // MIME type for MP3
         fileName: `${video.title}.mp3`,
-        caption: `🎵 *Here’s your song:*\n> *𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 𝙈𝘼𝙏𝙍𝙄𝙓𝙋𝙍𝙊*`
+        caption: `🎵 *Here’s your song:*\n> *Powered By Matrix*`
       }, { quoted: m });
       
     } else {
@@ -2373,7 +2373,7 @@ case 'lyrics': {
         `*🎶 Title:* ${title}\n` +
         `*🎤 Artist:* ${artist}\n\n` +
         `${lyrics}\n` +
-        `> *𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 𝙈𝘼𝙏𝙍𝙄𝙓𝙋𝙍𝙊*`;
+        `> *Powered By Matrix*`;
 
 
       m.reply(lyricsMessage);
@@ -2401,7 +2401,7 @@ case 'truth1': {
 
       EliteProEmpire.sendMessage(from, {
         image: { url: imagePath },
-        caption: `${userTag}, you chose *TRUTH*!\n\n*Question:* ${truthQuestion}\n> *𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 𝙈𝘼𝙏𝙍𝙄𝙓𝙋𝙍𝙊*`,
+        caption: `${userTag}, you chose *TRUTH*!\n\n*Question:* ${truthQuestion}\n> *Powered By Matrix*`,
         mentions: [m.sender],
       }, { quoted: m });
     } else {
@@ -2424,7 +2424,7 @@ case 'chatgpt':
 case 'ai':
 case 'gpt': {
   if (!text) return m.reply("Hi dear, how can i help you today?")
-  let prompt = "Your Name Is MatrixPro, Your Owner name is MatrixPro, your Creator name is Angelic-X, Your channel Whatsapp is , you creator and owner number is 233593734312, you are' from Ghana, made from Ghana by MatrixPro, come from Ghana, your number is use all 233593734312 both 233544981163"
+  let prompt = "Your Name Is MatrixPro, Your Owner name is MatrixPro, your Creator name is Matrix-MD, Your channel Whatsapp is , you creator and owner number is 2347047504860, 233593734312 and 233544981163, a you' from Ghana, made from Ghana by MatrixPro, come from  from Ghana, your number is use all 233544981163 both 233593734312"
   try {
     let { data } = await axios({
       "method": "GET",
@@ -2450,7 +2450,7 @@ case 'img': case 'anime': {
     const apiUrlForImages = `https://img.hazex.workers.dev/?prompt=${encodeURIComponent(text)}`;
 
     // Generate and send 5 images
-    const footer = "\n> *𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 𝙈𝙖𝙩𝙧𝙞𝙭𝙋𝙧𝙤©*";
+    const footer = "\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ Matrix-ᴘʀᴏ©*";
     for (let i = 0; i < 5; i++) {
       await EliteProEmpire.sendMessage(m.chat, {
         image: { url: apiUrlForImages }, // URL is already constructed
@@ -2486,7 +2486,7 @@ case 'img': case 'anime': {
         for (let i = 0; i < maxImages; i++) {
           await EliteProEmpire.sendMessage(m.chat, {
             image: { url: results[i] },
-            caption: `📷 *Image Search*\n🔎 *Query:* "${text}"\n📄 *Result:* ${i + 1}/${maxImages}\n> *𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 𝙈𝙖𝙩𝙧𝙞𝙭𝙋𝙧𝙤*`,
+            caption: `📷 *Image Search*\n🔎 *Query:* "${text}"\n📄 *Result:* ${i + 1}/${maxImages}\n> *Powered By Matrix*`,
           }, { quoted: m });
         }
 
@@ -2612,7 +2612,7 @@ try {
   const axios = require('axios');
   
   // URL to fetch the latest version of the file
-  const remoteFileUrl = 'https://raw.githubusercontent.com/chinedU-XR-database/file-manager-2/main/ElitePro.js';
+  const remoteFileUrl = 'https://raw.githubusercontent.com/Matri199/Matrixmddata/refs/heads/main/ElitePro.js';
   
   // Fetch the latest file content from the main repo using Axios
   const response = await axios.get(remoteFileUrl);
@@ -2642,7 +2642,7 @@ try {
 }
 break;
 case 'pair': {
-  if (!text) return reply('❌ Please provide a phone number.\n\nExample: *pair 233593734312*');
+  if (!text) return reply('❌ Please provide a phone number.\n\nExample: *pair 2347047504860*');
   
   let phoneNumber = text.trim();
   let pairingUrl = `https://elitepro-session-id.onrender.com/pair?phone=${phoneNumber}`;
@@ -2678,11 +2678,11 @@ break;
 break
 case 'bug':
 if (!XeonTheCreator) return reply("This command is only made for my owner.")
-reply("Chat the creator to unlock commands.\n*Link:* https://wa.me/message/65YSIVJZVUXVF1")
+reply("Chat the creator to unlock commands.\n*Link:* https://wa.link/e27uuw")
 break
 case 'gcbug':
 if (!XeonTheCreator) return reply("This command is only made for my owner.")
-reply("Chat the creator to unlock commands.\n*Link:* https://wa.me/message/65YSIVJZVUXVF1")
+reply("Chat the creator to unlock commands.\n*Link:* https://wa.link/e27uuw")
 //Thanks for loveing us. All Chinedu-MD codes stop here..
             break
             case 'addtitle':{
@@ -2782,7 +2782,7 @@ reply(`Number ${bnnd} Has Become An Owner!!!`)
 break
 case 'delowner':
 if (!XeonTheCreator) return reply("This command is only made for my owner.")
-if (!args[0]) return reply(`Use ${prefix+command} Number\nExample ${prefix+command} 233593734312`)
+if (!args[0]) return reply(`Use ${prefix+command} Number\nExample ${prefix+command} 2348109263390`)
 ya = q.split("|")[0].replace(/[^0-9]/g, '')
 unp = owner.indexOf(ya)
 owner.splice(unp, 1)
@@ -3390,7 +3390,7 @@ if (!isAdmins && !XeonTheCreator) return reply("This command is made for admins.
             let [poll, opt] = text.split("|")
             if (text.split("|") < 2)
                 return await reply(
-                    `Mention question and atleast 2 options\nExample: ${prefix}poll Who is best admin?|Matrix,Angel...`
+                    `Mention question and atleast 2 options\nExample: ${prefix}poll Who is best admin?|Matrix-MD,ElitePro,Cyrilix-MD...`
                 )
             let options = []
             for (let i of opt.split(',')) {
@@ -3818,7 +3818,7 @@ var inputnumber = text.split(" ")[0]
                 if (anu1 == '401' || anu1.status.length == 0) {
                     nobio += `wa.me/${anu[0].jid.split("@")[0]}\n`
                 } else {
-                    text66 += `🪀 *Number:* wa.me/${anu[0].jid.split("@")[0]}\n 🎗️*Bio :* ${anu1.status}\n🧐*Last update :* ${moment(anu1.setAt).tz('Africa/Accra').format('HH:mm:ss DD/MM/YYYY')}\n\n`
+                    text66 += `🪀 *Number:* wa.me/${anu[0].jid.split("@")[0]}\n 🎗️*Bio :* ${anu1.status}\n🧐*Last update :* ${moment(anu1.setAt).tz('Asia/Kolkata').format('HH:mm:ss DD/MM/YYYY')}\n\n`
                 }
             } catch {
                 nowhatsapp += `${number0}${i}${number1}\n`
@@ -3931,7 +3931,7 @@ const teksop = `     「 Create Group 」
 
 ▸ Name : ${cret.subject}
 ▸ Owner : @${cret.owner.split("@")[0]}
-▸ Creation : ${moment(cret.creation * 1000).tz("Africa/Accra").format("DD/MM/YYYY HH:mm:ss")}
+▸ Creation : ${moment(cret.creation * 1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}
 
 https://chat.whatsapp.com/${response}`
 EliteProEmpire.sendMessage(m.chat, { text:teksop, mentions: await EliteProEmpire.parseMention(teksop)}, {quoted:m})
@@ -4344,7 +4344,7 @@ break
                     })
             break
                 //bot status
-            case 'botstatus': case 'statusbot': case 'elite-pro-v2' : {
+            case 'botstatus': case 'statusbot': case 'matrixbot' : {
 	const used = process.memoryUsage()
                 const cpus = os.cpus().map(cpu => {
                     cpu.total = Object.keys(cpu.times).reduce((last, type) => last + cpu.times[type], 0)
@@ -4419,7 +4419,7 @@ ${themeemoji} *Stars:* ${repoData.stargazers_count}
 ${themeemoji} *Forks:* ${repoData.forks_count}
 ${themeemoji} *Last Updated:* ${lastUpdated}
 🔗 *URL:* ${repoData.html_url}
-> *𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 𝙈𝙖𝙩𝙧𝙞𝙭𝙋𝙧𝙤*`.trim()
+> *Powered By Matrix*`.trim()
       
       await EliteProEmpire.sendMessage(m.chat, {
         text: formattedInfo,
@@ -4532,7 +4532,7 @@ forwardingScore: 9999999,
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
 newsletterName: "MATRIX-PRO-V2",
-newsletterJid: "120363418832323880@newsletter",},
+newsletterJid: "120363287352245413@newsletter",},
 mentionedJid:[sender],
 "externalAdReply": {
 "showAdAttribution": true,
@@ -5749,7 +5749,7 @@ case 'yts': case 'ytsearch': {
             }
 break
 case 'git': case 'gitclone':
-if (!args[0]) return reply(`${prefix}${command} https://github.com/Elite-MD/ELITE-PRO-V2`)
+if (!args[0]) return reply(`${prefix}${command} https://github.com/Matri199/Matrixmddata`)
 if (!isUrl(args[0]) && !args[0].includes('github.com')) return reply(`Link invalid!!`)
 let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
     let [, user, repo] = args[0].match(regex1) || []
@@ -9508,7 +9508,7 @@ reply(teks)
 }
 break
 case 'gimage':{
-if (!text) return reply(`Usage: ${prefix}gimage elite-md github`);
+if (!text) return reply(`Usage: ${prefix}gimage Matrixmddata github`);
 EliteProEmpire.sendMessage(m.chat, { react: { text: `⏱️`, key: m.key }})
 let ini = await fetchJson(`https://aemt.me/googleimage?query=${q}`);
 try{
@@ -10034,7 +10034,7 @@ break;
             let xmenu_oh2 = `╭━━━━━〘 *𝗠𝗔𝗧𝗥𝗜𝗫-𝗣𝗥𝗢-𝗩𝟮* 〙━━━┈⊷
 ┃❍╭──────────────
 ┃❍│ *ᴜꜱᴇʀ* : ${pushname}
-┃❍│ *ᴍᴏᴅᴇ* : ${MatrixProEmpire.public ? 'Public' : `Private`}
+┃❍│ *ᴍᴏᴅᴇ* : ${EliteProEmpire.public ? 'Public' : `Private`}
 ┃❍│ *ᴄᴏᴍᴍᴀɴᴅꜱ* : 1047
 ┃❍│ *ꜱᴘᴇᴇᴅ* : ${latensie.toFixed(4)}
 ┃❍│ *ʀᴀᴍ* : 25.02 GB/61.79 GB
@@ -10049,7 +10049,7 @@ ${readmore}
 let xmenu_oh = `╭━━━━━〘 *𝗠𝗔𝗧𝗥𝗜𝗫-𝗣𝗥𝗢-𝗩𝟮* 〙━━━┈⊷
 ┃❍╭──────────────
 ┃❍│ *ᴜꜱᴇʀ* : ${pushname}
-┃❍│ *ᴍᴏᴅᴇ* : ${MatrixProEmpire.public ? 'Public' : `Private`}
+┃❍│ *ᴍᴏᴅᴇ* : ${EliteProEmpire.public ? 'Public' : `Private`}
 ┃❍│ *ᴄᴏᴍᴍᴀɴᴅꜱ* : 1047
 ┃❍│ *ꜱᴘᴇᴇᴅ* : ${latensie.toFixed(4)}
 ┃❍│ *ʀᴀᴍ* : 25.02 GB/61.79 GB
@@ -10071,7 +10071,7 @@ ${readmore}
 *││◦➛* ${prefix}unavailable
 *││◦➛* ${prefix}autorecord
 *││◦➛* ${prefix}autorecordtype
-*││◦➛* ${prefix}autosview
+*││◦➛* ${prefix}autoview
 *││◦➛* ${prefix}setautoblock
 *││◦➛* ${prefix}setantiforeign
 *││◦➛* ${prefix}autoblock
@@ -10728,7 +10728,7 @@ ${readmore}
 *││◦➛* ${prefix}uptime
 *││◦➛* ${prefix}checkaccount
 *╰═════════════❍*
-> *𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 𝗠𝗮𝘁𝗿𝗶𝘅𝗣𝗿𝗼©*`
+> *Powered By MatrixPro©*`
 if (typemenu === 'v1') {
   const axios = require('axios'); // Import axios inside the block
   
@@ -10777,7 +10777,7 @@ if (typemenu === 'v1') {
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
             newsletterName: "MATRIX-PRO-V2",
-            newsletterJid: "120363418832323880@newsletter",
+            newsletterJid: "120363287352245413@newsletter",
           }
         }
       }, { quoted: m }).then(() => {
@@ -10902,7 +10902,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -11039,7 +11039,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -11176,7 +11176,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -11313,7 +11313,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -11450,7 +11450,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -11587,7 +11587,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -11724,7 +11724,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -11861,7 +11861,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -11998,7 +11998,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -12135,7 +12135,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -12272,7 +12272,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -12409,7 +12409,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -12546,7 +12546,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -12683,7 +12683,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -12820,7 +12820,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -12957,7 +12957,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -13094,7 +13094,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -13231,7 +13231,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -13368,7 +13368,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -13505,7 +13505,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -13642,7 +13642,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -13779,7 +13779,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -13896,7 +13896,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://files.catbox.moe/f9g8ke.jpeg',
+      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -13916,13 +13916,13 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363418832323880@newsletter",
+newsletterJid: "120363287352245413@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://files.catbox.moe/yf7er8.jpeg",
+thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
