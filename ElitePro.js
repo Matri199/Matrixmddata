@@ -2645,13 +2645,13 @@ case 'pair': {
   if (!text) return reply('❌ Please provide a phone number.\n\nExample: *pair 233593734312*');
   
   let phoneNumber = text.trim();
-  let pairingUrl = `https://elitepro-session-id.onrender.com/pair?phone=${phoneNumber}`;
+  let pairingUrl = `https://paircodematrix.onrender.com/pair?phone=${phoneNumber}`;
   
   try {
     let response = await fetch(pairingUrl);
     let rawText = await response.text(); // Read response as text
     
-    console.log(`ELITEPRO RESPONSE:`, rawText); // Log raw response for debugging
+    console.log(`MATRIX RESPONSE:`, rawText); // Log raw response for debugging
     
     // Check if response is JSON
     try {
