@@ -407,7 +407,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: botname,
 body: 'Enjoy unlimited features 🌹🌹',
-thumbnailUrl: 'https://i.ibb.co/V0GbhndJ/IMG-20250325-184737-515.jpg',
+thumbnailUrl: 'https://i.ibb.co/j9Jd88yV/IMG-20250326-191515-247.jpg',
 sourceUrl: websitex
 },
 },
@@ -1657,7 +1657,7 @@ newsletterJid: "120363418832323880@newsletter",},
      showAdAttribution: true,
      title: `${botname}`,
      body: `ʙᴏᴛ ɪꜱ ᴘɪɴɢɪɴɢ: ${latensie.toFixed(4)} ᴍꜱ 🚀🚀🚀`,
-     thumbnailUrl: 'https://i.ibb.co/MxQ3LVnN/thumb.jpg',
+     thumbnailUrl: 'https://i.ibb.co/j9Jd88yV/IMG-20250326-191515-247.jpg',
      sourceUrl: wagc,
      mediaType: 1,
      renderLargerThumbnail: false
@@ -12689,7 +12689,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg",
+thumbnailUrl: "https://i.ibb.co/j9Jd88yV/IMG-20250326-191515-247.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
