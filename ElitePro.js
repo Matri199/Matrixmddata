@@ -158,9 +158,9 @@ let vote = db.data.others.vote = []
 let kuismath = db.data.game.math = []
 
 //time
-const xtime = moment.tz('Africa/Lagos').format('HH:mm:ss')
-const xdate = moment.tz('Africa/Lagos').format('DD/MM/YYYY')
-const time2 = moment().tz('Africa/Lagos').format('HH:mm:ss')  
+const xtime = moment.tz('Africa/Accra').format('HH:mm:ss')
+const xdate = moment.tz('Africa/Accra').format('DD/MM/YYYY')
+const time2 = moment().tz('Africa/Accra').format('HH:mm:ss')  
 if(time2 < "23:59:00"){
 var xeonytimewisher = `🌌 *Good Night! Nighty night!*`
  }
@@ -363,7 +363,7 @@ caption: `${dgxeon + xeontext1}`,
                         externalAdReply: {
                             showAdAttribution: true,
                             title: botname,
-                            body: 'Enjoy unlimited features 🫠🫠',
+                            body: 'Enjoy unlimited features 🦩🦩',
                             previewType: "PHOTO",
                             thumbnail: fs.readFileSync('./EliteProMedia/theme/elitepro.jpg'),
                             sourceUrl: wagc
@@ -380,7 +380,7 @@ caption: `${dgxeon + xeontext1}`,
                      externalAdReply: {
                         showAdAttribution: true,
                         title: botname,
-                        body: 'Enjoy unlimited features 🫠🫠',
+                        body: 'Enjoy unlimited features 🦄🦄',
                         thumbnail: fs.readFileSync('./EliteProMedia/theme/elitepro.jpg'),
                         sourceUrl: websitex,
                         mediaType: 1,
@@ -406,8 +406,8 @@ newsletterJid: "120363418832323880@newsletter",
 externalAdReply: {  
 showAdAttribution: true,
 title: botname,
-body: 'Enjoy unlimited features 🫠🫠',
-thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+body: 'Enjoy unlimited features 🌹🌹',
+thumbnailUrl: 'https://i.ibb.co/V0GbhndJ/IMG-20250325-184737-515.jpg',
 sourceUrl: websitex
 },
 },
@@ -856,7 +856,7 @@ function formatDuration(ms) {
             for (let i of users) {
                db.data.users[i].limit = Limitxeon
             }
-            EliteProEmpire.sendText('120363167338947238@g.us', { text: `Reset Limit`})
+            EliteProEmpire.sendText('120363418832323880@g.us', { text: `Reset Limit`})
         }
         // Grup Only
         if (!m.isGroup && !XeonTheCreator && db.data.settings[botNumber].onlygrub ) {
@@ -1157,7 +1157,7 @@ if (XeonTheCreator) return reply(bvl)
 			            participant: m.key.participant
 			        }
 			    })
-			EliteProEmpire.sendMessage(from, {text:`\`\`\`「 GC Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} *_Waring gc link not allowed in current group._*`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+			EliteProEmpire.sendMessage(from, {text:`\`\`\`「 GC Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} *_Warning gc link not allowed in current group._*`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
             }
         }
         if (db.data.chats[m.chat].antilink) {
@@ -1175,7 +1175,7 @@ if (XeonTheCreator) return reply(bvl)
 			            participant: m.key.participant
 			        }
 			    })
-			EliteProEmpire.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} *_Waring link not allowed in current group._*`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+			EliteProEmpire.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} *_Warning link not allowed in current group._*`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
             }
         }
         //afk
@@ -1657,7 +1657,7 @@ newsletterJid: "120363418832323880@newsletter",},
      showAdAttribution: true,
      title: `${botname}`,
      body: `ʙᴏᴛ ɪꜱ ᴘɪɴɢɪɴɢ: ${latensie.toFixed(4)} ᴍꜱ 🚀🚀🚀`,
-     thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+     thumbnailUrl: 'https://i.ibb.co/MxQ3LVnN/thumb.jpg',
      sourceUrl: wagc,
      mediaType: 1,
      renderLargerThumbnail: false
@@ -1678,7 +1678,7 @@ try {
     const apiUrl = `https://apis.davidcyriltech.my.id/flux?prompt=${encodeURIComponent(text)}`;
  await EliteProEmpire.sendMessage(m.chat, {
       image: { url: apiUrl },
-      caption: `👨‍💻 *Flux Image Generator*\n\n📦 *Prompt:* ${text}\n> *Powered By Matrix*`,
+      caption: `👨‍💻 *Flux Image Generator*\n\n📦 *Prompt:* ${text}\n> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`,
     }, { quoted: m });
   } catch (error) {
     console.error('Error in Flux command:', error);
@@ -1705,7 +1705,7 @@ try {
                 document: { url: downloadLink },
                 mimetype: mimeType,
                 fileName: fileName,
-                caption: `📦 *File Name:* ${fileName}\n> *Powered By Matrix*`
+                caption: `📦 *File Name:* ${fileName}\n> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`
             }, { quoted: m });
         } else {
 
@@ -1720,7 +1720,7 @@ try {
 }
 //Play commands 
 case 'ytmp3': {
-  if (!text) return reply(`*Example*: ${prefix + command} Faded by Alan Walker`);
+  if (!text) return reply(`*Example*: ${prefix + command} Pony by Daddy Lumba`);
   
   try {
     await EliteProEmpire.sendMessage(m.chat, { react: { text: `🎵`, key: m.key } });
@@ -1744,7 +1744,7 @@ case 'ytmp3': {
   `> *ᴜʀʟ:* ${video.url}\n` +
   `┃ *Enjoy your music®*\n` +
   `╰━━━━━━━━━━━━━━━━━━┈⊷\n` +
-  `> *Powered By Matrix*`;
+  `> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`;
     
     await EliteProEmpire.sendMessage(m.chat, {
       image: { url: video.thumbnail },
@@ -1806,7 +1806,7 @@ case 'play': {
   `> *ᴜʀʟ:* ${video.url}\n` +
   `┃ *Enjoy your music®*\n` +
   `╰━━━━━━━━━━━━━━━━━━┈⊷\n` +
-  `> *Powered By Matrix*`;
+  `> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`;
   
     // Send video information with thumbnail
     await EliteProEmpire.sendMessage(m.chat, {
@@ -1841,7 +1841,7 @@ case 'play': {
 }
 //Video downloader 
 case 'ytmp4': {
-  if (!text) return reply(`*Example*: ${prefix + command} Faded by Alan Walker`);
+  if (!text) return reply(`*Example*: ${prefix + command} Grace by Stonebwoy `);
   
   try {
     await EliteProEmpire.sendMessage(m.chat, { react: { text: `📽️`, key: m?.key } });
@@ -1859,7 +1859,7 @@ case 'ytmp4': {
   `> *ᴜʀʟ:* ${video.url}\n` +
   `┃ *Enjoy your video®*\n` +
   `╰━━━━━━━━━━━━━━━━━━┈⊷\n` +
-  `> *Powered By Matrix*`;
+  `> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`;
     
     await EliteProEmpire.sendMessage(m.chat, {
       image: { url: video.thumbnail },
@@ -1880,7 +1880,7 @@ case 'ytmp4': {
       await EliteProEmpire.sendMessage(m.chat, {
         video: { url: downloadUrl },
         mimetype: 'video/mp4',
-        caption: `🎬 *Title:* ${video.title}\n> *Powered By Matrix*`
+        caption: `🎬 *Title:* ${video.title}\n> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`
       }, { quoted: m });
     } else {
       reply(`*An error occurred while downloading the video.*`);
@@ -1891,7 +1891,7 @@ case 'ytmp4': {
   break;
 }
 case 'video': {
-  if (!text) return reply(`*Example*: ${prefix + command} Faded by Alan Walker`);
+  if (!text) return reply(`*Example*: ${prefix + command} Gringo by Shatta Wale`);
   
   try {
     
@@ -1911,7 +1911,7 @@ case 'video': {
       `> *ᴜʀʟ:* ${video.url}\n` +
       `┃ *Enjoy your video®*\n` +
       `╰━━━━━━━━━━━━━━━━━━┈⊷\n` +
-      `> *Powered By Matrix*`;  
+      `> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`;  
     
     await EliteProEmpire.sendMessage(m.chat, {
       image: { url: video.thumbnail },
@@ -1932,7 +1932,7 @@ case 'video': {
       await EliteProEmpire.sendMessage(m.chat, {
         video: { url: download_url },
         mimetype: 'video/mp4',
-        caption: `🎬 *Title:* ${title}\n> *Powered By Matrix*`
+        caption: `🎬 *Title:* ${title}\n> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`
       }, { quoted: m });
     } else {
       reply(`*Error fetching the video! Please try again later.*`);
@@ -1969,7 +1969,7 @@ case 'instagram': {
             video: { url: high_quality },
             mimetype: 'video/mp4',
             fileName: `${title}_HD.mp4`,
-            caption: `🎥 *Title:* ${title}\n*Quality:* HD\n> *Powered By Matrix*`
+            caption: `🎥 *Title:* ${title}\n*Quality:* HD\n> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`
           }, { quoted: m });
         }
         if (isDirectDownloadSD) {
@@ -1977,7 +1977,7 @@ case 'instagram': {
             video: { url: low_quality },
             mimetype: 'video/mp4',
             fileName: `${title}_SD.mp4`,
-            caption: `🎥 *Title:* ${title}\n*Quality:* SD\n> *Powered By Matrix*`
+            caption: `🎥 *Title:* ${title}\n*Quality:* SD\n> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`
           }, { quoted: m });
         }
       } else {
@@ -1992,7 +1992,7 @@ case 'instagram': {
             video: Buffer.from(hdBuffer.data),
             mimetype: 'video/mp4',
             fileName: `${title}_HD.mp4`,
-            caption: `🎥 *Title:* ${title}\n*Quality:* HD\n> *Powered By Matrix*`
+            caption: `🎥 *Title:* ${title}\n*Quality:* HD\n> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`
           }, { quoted: m });
         }
         if (low_quality) {
@@ -2000,7 +2000,7 @@ case 'instagram': {
             video: Buffer.from(sdBuffer.data),
             mimetype: 'video/mp4',
             fileName: `${title}_SD.mp4`,
-            caption: `🎥 *Title:* ${title}\n*Quality:* SD\n> *Powered By Matrix*`
+            caption: `🎥 *Title:* ${title}\n*Quality:* SD\n> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`
           }, { quoted: m });
         }
       }
@@ -2101,7 +2101,7 @@ Upload your bot code you have downloaded
 Start server Enjoy 😉
 
 *Watch:*
-https://youtu.be/_huX4r3hIUc?si=QypokRQ6fpFeb9Ee`,
+https://youtu.be/-Reoq0UeVJU?si=67SZq8fl23pSFZbe`,
    contextInfo: {
 forwardingScore: 2025,
 isForwarded: true,
@@ -2175,7 +2175,7 @@ newsletterJid: "120363418832323880@newsletter",},    externalAdReply: {
       showAdAttribution: true,
       title: `${botname}`,
       body: `Click here for latest panel details`,
-      thumbnailUrl: 'https://i.ibb.co/5WjxsP0G/20250206-003158.jpg',
+      thumbnailUrl: 'https://i.ibb.co/HDY30CBV/VPSHosting-KBTask667.png',
       sourceUrl: wagc,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -2205,7 +2205,7 @@ case 'apk': {
       image: { url: thumbnail },
       caption: `📥 *APK Downloader* 📥\n` +
         `📌 *Name:* ${apk_name}\n` +
-        `> *Powered By Matrix*`
+        `> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`
     }, { quoted: m });
 
     // Send APK file immediately after
@@ -2265,7 +2265,7 @@ forwardingScore: 999,
           showAdAttribution: true,
           title: "Message: MATRIXPRO IS ALIVE",
           body: "Tap here to join our channel",
-          thumbnailUrl: 'https://i.ibb.co/CNFGVhK/20250204-154801.jpg', // Replace with your thumbnail URL
+          thumbnailUrl: 'https://i.ibb.co/57YVXFd/Leonardo-Phoenix-A-mesmerizing-depiction-of-a-young-boy-likely-0.jpg', // Replace with your thumbnail URL
           sourceUrl: wagc, // Replace with your channel link
           mediaType: 1,
           renderLargerThumbnail: false
@@ -2305,7 +2305,7 @@ case 'song': {
       `> *ᴜʀʟ:* ${video.url}\n` +
       `┃ *Enjoy your music®*\n` +
       `╰━━━━━━━━━━━━━━━━━━┈⊷\n` +
-      `> *Powered By Matrix*`;
+      `> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`;
     
     await EliteProEmpire.sendMessage(m.chat, {
       image: { url: video.thumbnail },
@@ -2322,7 +2322,7 @@ case 'song': {
         document: { url: download_url }, // Sending as a document
         mimetype: 'audio/mpeg', // MIME type for MP3
         fileName: `${video.title}.mp3`,
-        caption: `🎵 *Here’s your song:*\n> *Powered By Matrix*`
+        caption: `🎵 *Here’s your song:*\n> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`
       }, { quoted: m });
       
     } else {
@@ -2356,11 +2356,11 @@ case 'shorturl': {
 break;
 //Code for lyrics downloader
 case 'lyrics': {
-  if (!text) return reply(`*Example:* ${prefix + command} faded | Alan Walker`);
+  if (!text) return reply(`*Example:* ${prefix + command} lonely | Akon`);
 
   try {
     const [title, artist] = text.split('|').map(str => str.trim());
-    if (!title || !artist) return reply(`*Please provide both song title and artist, e.g.:* ${prefix + command} faded | Alan Walker`);
+    if (!title || !artist) return reply(`*Please provide both song title and artist, e.g.:* ${prefix + command} illuminati | Sarkodie`);
 
     await EliteProEmpire.sendMessage(m.chat, { react: { text: `🎶`, key: m.key } });
     const apiUrl = `https://apis.davidcyriltech.my.id/lyrics?t=${encodeURIComponent(title)}&a=${encodeURIComponent(artist)}`;
@@ -2373,7 +2373,7 @@ case 'lyrics': {
         `*🎶 Title:* ${title}\n` +
         `*🎤 Artist:* ${artist}\n\n` +
         `${lyrics}\n` +
-        `> *Powered By Matrix*`;
+        `> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`;
 
 
       m.reply(lyricsMessage);
@@ -2401,7 +2401,7 @@ case 'truth1': {
 
       EliteProEmpire.sendMessage(from, {
         image: { url: imagePath },
-        caption: `${userTag}, you chose *TRUTH*!\n\n*Question:* ${truthQuestion}\n> *Powered By Matrix*`,
+        caption: `${userTag}, you chose *TRUTH*!\n\n*Question:* ${truthQuestion}\n> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`,
         mentions: [m.sender],
       }, { quoted: m });
     } else {
@@ -2424,7 +2424,7 @@ case 'chatgpt':
 case 'ai':
 case 'gpt': {
   if (!text) return m.reply("Hi dear, how can i help you today?")
-  let prompt = "Your Name Is MatrixPro, Your Owner name is MatrixPro, your Creator name is Matrix-MD, Your channel Whatsapp is , you creator and owner number is 2347047504860, 233593734312 and 233544981163, a you' from Ghana, made from Ghana by MatrixPro, come from  from Ghana, your number is use all 233544981163 both 233593734312"
+  let prompt = "Your Name Is MatrixPro, Your Owner name is MatrixZat, your Creator name is Matrix-X, Your channel Whatsapp is , you creator and owner number is 233544981163, 233593734312 and 233544981163, are you' from Ghana, made from Ghana by MatrixPro, came from Ghana, your number is use all 233544981163 both 233593734312"
   try {
     let { data } = await axios({
       "method": "GET",
@@ -2486,7 +2486,7 @@ case 'img': case 'anime': {
         for (let i = 0; i < maxImages; i++) {
           await EliteProEmpire.sendMessage(m.chat, {
             image: { url: results[i] },
-            caption: `📷 *Image Search*\n🔎 *Query:* "${text}"\n📄 *Result:* ${i + 1}/${maxImages}\n> *Powered By Matrix*`,
+            caption: `📷 *Image Search*\n🔎 *Query:* "${text}"\n📄 *Result:* ${i + 1}/${maxImages}\n> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`,
           }, { quoted: m });
         }
 
@@ -2642,7 +2642,7 @@ try {
 }
 break;
 case 'pair': {
-  if (!text) return reply('❌ Please provide a phone number.\n\nExample: *pair 2347047504860*');
+  if (!text) return reply('❌ Please provide a phone number.\n\nExample: *pair 233593734312*');
   
   let phoneNumber = text.trim();
   let pairingUrl = `https://elitepro-session-id.onrender.com/pair?phone=${phoneNumber}`;
@@ -2678,11 +2678,11 @@ break;
 break
 case 'bug':
 if (!XeonTheCreator) return reply("This command is only made for my owner.")
-reply("Chat the creator to unlock commands.\n*Link:* https://wa.link/e27uuw")
+reply("Chat the creator to unlock commands.\n*Link:* https://wa.me/message/65YSIVJZVUXVF1")
 break
 case 'gcbug':
 if (!XeonTheCreator) return reply("This command is only made for my owner.")
-reply("Chat the creator to unlock commands.\n*Link:* https://wa.link/e27uuw")
+reply("Chat the creator to unlock commands.\n*Link:* https://wa.me/message/65YSIVJZVUXVF1")
 //Thanks for loveing us. All Chinedu-MD codes stop here..
             break
             case 'addtitle':{
@@ -2741,7 +2741,7 @@ reply("Chat the creator to unlock commands.\n*Link:* https://wa.link/e27uuw")
             break
             case 'delprem':
                 if (!XeonTheCreator) return reply("This command is only made for my owner.")
-                if (args.length < 1) return reply(`Usage ${prefix + command} @tag\n${prefix + command} number\n\nExample : ${prefix + command} 2348109263390`)
+                if (args.length < 1) return reply(`Usage ${prefix + command} @tag\n${prefix + command} number\n\nExample : ${prefix + command} 233544981163`)
                 if (m.mentionedJid.length !== 0) {
                     for (let i = 0; i < m.mentionedJid.length; i++) {
                         premium.splice(getPremiumPosition(m.mentionedJid[i], premium), 1)
@@ -2782,7 +2782,7 @@ reply(`Number ${bnnd} Has Become An Owner!!!`)
 break
 case 'delowner':
 if (!XeonTheCreator) return reply("This command is only made for my owner.")
-if (!args[0]) return reply(`Use ${prefix+command} Number\nExample ${prefix+command} 2348109263390`)
+if (!args[0]) return reply(`Use ${prefix+command} Number\nExample ${prefix+command} 233544981163`)
 ya = q.split("|")[0].replace(/[^0-9]/g, '')
 unp = owner.indexOf(ya)
 owner.splice(unp, 1)
@@ -2860,7 +2860,7 @@ case 'listowner': {
                     'path': '/'
                 }, function(resp) {
                     resp.on('data', function(ip) {
-                        reply("🔎 My public IP address is: " + ip);
+                        reply("🔎 Your public IP address is: " + ip);
                     })
                 })
             break
@@ -3274,7 +3274,7 @@ case 'block': case 'ban': {
                                 showAdAttribution: true,
                                 title: botname,
                                 body: `Sent in ${i.length} Group`,
-                                thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+                                thumbnailUrl: 'https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg',
                                 sourceUrl: wagc,
                                 mediaType: 1,
                                 renderLargerThumbnail: true
@@ -3390,7 +3390,7 @@ if (!isAdmins && !XeonTheCreator) return reply("This command is made for admins.
             let [poll, opt] = text.split("|")
             if (text.split("|") < 2)
                 return await reply(
-                    `Mention question and atleast 2 options\nExample: ${prefix}poll Who is best admin?|Matrix-MD,ElitePro,Cyrilix-MD...`
+                    `Mention question and atleast 2 options\nExample: ${prefix}poll Who is best admin?|Matrix-X,OfficialKango,God-Tech...`
                 )
             let options = []
             for (let i of opt.split(',')) {
@@ -3818,7 +3818,7 @@ var inputnumber = text.split(" ")[0]
                 if (anu1 == '401' || anu1.status.length == 0) {
                     nobio += `wa.me/${anu[0].jid.split("@")[0]}\n`
                 } else {
-                    text66 += `🪀 *Number:* wa.me/${anu[0].jid.split("@")[0]}\n 🎗️*Bio :* ${anu1.status}\n🧐*Last update :* ${moment(anu1.setAt).tz('Asia/Kolkata').format('HH:mm:ss DD/MM/YYYY')}\n\n`
+                    text66 += `🪀 *Number:* wa.me/${anu[0].jid.split("@")[0]}\n 🎗️*Bio :* ${anu1.status}\n🧐*Last update :* ${moment(anu1.setAt).tz('Africa/Ghana').format('HH:mm:ss DD/MM/YYYY')}\n\n`
                 }
             } catch {
                 nowhatsapp += `${number0}${i}${number1}\n`
@@ -3931,7 +3931,7 @@ const teksop = `     「 Create Group 」
 
 ▸ Name : ${cret.subject}
 ▸ Owner : @${cret.owner.split("@")[0]}
-▸ Creation : ${moment(cret.creation * 1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}
+▸ Creation : ${moment(cret.creation * 1000).tz("Africa/Ghana").format("DD/MM/YYYY HH:mm:ss")}
 
 https://chat.whatsapp.com/${response}`
 EliteProEmpire.sendMessage(m.chat, { text:teksop, mentions: await EliteProEmpire.parseMention(teksop)}, {quoted:m})
@@ -4017,7 +4017,7 @@ if (!XeonTheCreator) return reply("This command is only made for my owner.")
                 if (!isAdmins && !isGroupOwner && !XeonTheCreator) return reply("This command is made for admins.")
                 if (!isBotAdmins) return reply("Bot needs admin privileges.")
 let me = m.sender
-let teks = `🫠 *MATRIX-PRO-V2 TAGGED YOU*\n
+let teks = `🗣️ *MATRIX-PRO-V2 TAGGED YOU*\n
 ✨ *Message:* ${q ? q : 'no message'}
 > *You were tagged by the admin.*${readmore}\n═════✪〘 *TAG ALL* 〙✪═════\n➲ *Author:*  @${me.split('@')[0]}\n`
                 for (let mem of participants) {
@@ -4419,7 +4419,7 @@ ${themeemoji} *Stars:* ${repoData.stargazers_count}
 ${themeemoji} *Forks:* ${repoData.forks_count}
 ${themeemoji} *Last Updated:* ${lastUpdated}
 🔗 *URL:* ${repoData.html_url}
-> *Powered By Matrix*`.trim()
+> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱*`.trim()
       
       await EliteProEmpire.sendMessage(m.chat, {
         text: formattedInfo,
@@ -4455,7 +4455,7 @@ break
                             showAdAttribution: true,
                             title: botname,
                             body: ownername,
-                            thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+                            thumbnailUrl: 'https://i.ibb.co/j9Hr2nCp/elitepro.png',
                             sourceUrl: wagc,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -4493,7 +4493,7 @@ break
                                 showAdAttribution: true,
                                 title: botname,
                                 body: ownername,
-                                thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+                                thumbnailUrl: 'https://i.ibb.co/j9Hr2nCp/elitepro.png',
                                 sourceUrl: wagc,
                                 mediaType: 1,
                                 renderLargerThumbnail: true
@@ -4509,7 +4509,7 @@ break
                                 showAdAttribution: true,
                                 title: botname,
                                 body: ownername,
-                                thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+                                thumbnailUrl: 'https://i.ibb.co/V0GbhndJ/IMG-20250325-184737-515.jpg',
                                 sourceUrl: wagc,
                                 mediaType: 1,
                                 renderLargerThumbnail: true
@@ -5878,7 +5878,7 @@ if (!text) return reply(`Enter Instagram Username\n\nExample: ${prefix + command
 }
 break
 case 'ghstalk': case 'githubstalk':{
-if (!q) return reply(`Example ${prefix+command} ElitePro`)
+if (!q) return reply(`Example ${prefix+command} MatrixPro`)
 await XeonStickWait()
 let githubstalk = require('./lib/scraper.js')
 aj = await githubstalk.githubstalk(`${q}`)
@@ -10061,7 +10061,7 @@ let xmenu_oh = `╭━━━━━〘 *𝗠𝗔𝗧𝗥𝗜𝗫-𝗣𝗥𝗢-�
 ${xeonytimewisher} 
 ${readmore}
 *╭════════════════════⊷❍*
-*╭────❍* Owner Menu *❍*
+*╭────❍* 𝐎𝐰𝐧𝐞𝐫 𝐌𝐞𝐧𝐮 *❍*
 *││◦➛* ${prefix}autoread
 *││◦➛* ${prefix}autobio
 *││◦➛* ${prefix}autoreact 
@@ -10142,12 +10142,12 @@ ${readmore}
 *││◦➛* ${prefix}unpinchat
 *╰═════════════❍*
 
-*╭────❍* Tutorials *❍*
+*╭────❍* 𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥𝐬 *❍*
 *││◦➛* ${prefix}deploy
 *││◦➛* ${prefix}panel
 *╰═════════════❍*
 
-*╭────❍* Group Menu *❍*
+*╭────❍* 𝐆𝐫𝐨𝐮𝐩 𝐌𝐞𝐧𝐮 *❍*
 *││◦➛* ${prefix}antibot
 *││◦➛* ${prefix}antiviewonce
 *││◦➛* ${prefix}vv
@@ -10208,7 +10208,7 @@ ${readmore}
 *││◦➛* ${prefix}getjoinrequest
 *╰═════════════❍*
 
-*╭────❍* Search *❍*
+*╭────❍* 𝐒𝐞𝐚𝐫𝐜𝐡 *❍*
 *││◦➛* ${prefix}google
 *││◦➛* ${prefix}wikipedia
 *││◦➛* ${prefix}ytsearch
@@ -10225,7 +10225,7 @@ ${readmore}
 *││◦➛* ${prefix}lyrics
 *╰═════════════❍*
 
-*╭────❍* Download Menu *❍*
+*╭────❍* 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐌𝐞𝐧𝐮 *❍*
 *││◦➛* ${prefix}xnxxdl
 *││◦➛* ${prefix}xvideodl
 *││◦➛* ${prefix}itunes
@@ -10260,7 +10260,7 @@ ${readmore}
 *││◦➛* ${prefix}autodownload
 *╰═════════════❍*
 
-*╭────❍* Convert *❍*
+*╭────❍* 𝐂𝐨𝐧𝐯𝐞𝐫𝐭 *❍*
 *││◦➛* ${prefix}shorturl
 *││◦➛* ${prefix}obfuscate
 *││◦➛* ${prefix}styletext
@@ -10303,7 +10303,7 @@ ${readmore}
 *││◦➛* ${prefix}translate
 *╰═════════════❍*
 
-*╭────❍* List *❍*
+*╭────❍* 𝐋𝐢𝐬𝐭 *❍*
 *││◦➛* ${prefix}listprem
 *││◦➛* ${prefix}listowner
 *││◦➛* ${prefix}liststicker
@@ -10318,7 +10318,7 @@ ${readmore}
 *││◦➛* ${prefix}listgc
 *╰═════════════❍*
 
-*╭────❍* Random Photo *❍*
+*╭────❍* 𝐑𝐚𝐧𝐝𝐨𝐦 𝐏𝐡𝐨𝐭𝐨 *❍*
 *││◦➛* ${prefix}aesthetic
 *││◦➛* ${prefix}coffee
 *││◦➛* ${prefix}wikimedia
@@ -10378,7 +10378,7 @@ ${readmore}
 *││◦➛* ${prefix}vietnamese
 *╰═════════════❍*
 
-*╭────❍* Random Video *❍*
+*╭────❍* 𝐑𝐚𝐧𝐝𝐨𝐦 𝐕𝐢𝐝𝐞𝐨 *❍*
 *││◦➛* ${prefix}tiktokgirl
 *││◦➛* ${prefix}tiktoknukthy
 *││◦➛* ${prefix}tiktokkayes
@@ -10389,14 +10389,14 @@ ${readmore}
 *││◦➛* ${prefix}tiktokbocil
 *╰═════════════❍*
 
-*╭────❍* Stalker *❍*
+*╭────❍* 𝐒𝐭𝐚𝐥𝐤𝐞𝐫 *❍*
 *││◦➛* ${prefix}tiktokstalk
 *││◦➛* ${prefix}mlstalk
 *││◦➛* ${prefix}npmstalk
 *││◦➛* ${prefix}ghstalk
 *╰═════════════❍*
 
-*╭────❍* OpenAI *❍*
+*╭────❍* 𝐎𝐩𝐞𝐧𝐀𝐈 *❍*
 *││◦➛* ${prefix}openai-indo
 *││◦➛* ${prefix}indo-ai
 *││◦➛* ${prefix}diffusion
@@ -10411,7 +10411,7 @@ ${readmore}
 *││◦➛* ${prefix}tozombie
 *╰═════════════❍*
 
-*╭────❍* Game *❍*
+*╭────❍* 𝐆𝐚𝐦𝐞 *❍*
 *││◦➛* ${prefix}truth
 *││◦➛* ${prefix}truth1
 *││◦➛* ${prefix}dare
@@ -10420,7 +10420,7 @@ ${readmore}
 *││◦➛* ${prefix}math
 *╰═════════════❍*
 
-*╭────❍* Fun Menu *❍*
+*╭────❍* 𝐅𝐮𝐧 𝐌𝐞𝐧𝐮 *❍*
 *││◦➛* ${prefix}define
 *││◦➛* ${prefix}readmore
 *││◦➛* ${prefix}fact
@@ -10487,7 +10487,7 @@ ${readmore}
 *││◦➛* ${prefix}sound1 - sound161
 *╰═════════════❍*
 
-*╭────❍* Sticker *❍*
+*╭────❍* 𝐒𝐭𝐢𝐜𝐤𝐞𝐫 *❍*
 *││◦➛* ${prefix}goose
 *││◦➛* ${prefix}woof
 *││◦➛* ${prefix}8ball
@@ -10498,7 +10498,7 @@ ${readmore}
 *││◦➛* ${prefix}ttp
 *╰═════════════❍*
 
-*╭────❍* Anime *❍*
+*╭────❍* 𝐀𝐧𝐢𝐦𝐞 *❍*
 *││◦➛* ${prefix}stickhandhold
 *││◦➛* ${prefix}stickshinobu
 *││◦➛* ${prefix}stickcuddle
@@ -10636,7 +10636,7 @@ ${readmore}
 *││◦➛* ${prefix}gecg
 *╰═════════════❍*
 
-*╭────❍* Anime NSFW *❍*
+*╭────❍* 𝐀𝐧𝐢𝐦𝐞 𝐍𝐒𝐅𝐖 *❍*
 *││◦➛* ${prefix}hentai
 *││◦➛* ${prefix}gifblowjob
 *││◦➛* ${prefix}hentaivid
@@ -10653,7 +10653,7 @@ ${readmore}
 *││◦➛* ${prefix}zettai
 *╰═════════════❍*
 
-*╭────❍* PhotoOxy Maker *❍*
+*╭────❍* 𝐏𝐡𝐨𝐭𝐨𝐎𝐱𝐲 𝐌𝐚𝐤𝐞𝐫 *❍*
 *││◦➛* ${prefix}shadow 
 *││◦➛* ${prefix}write 
 *││◦➛* ${prefix}romantic 
@@ -10683,7 +10683,7 @@ ${readmore}
 *││◦➛* ${prefix}shinetext
 *╰═════════════❍*
 
-*╭────❍* Database *❍*
+*╭────❍* 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞 *❍*
 *││◦➛* ${prefix}setcmd
 *││◦➛* ${prefix}delcmd
 *││◦➛* ${prefix}listcmd
@@ -10694,7 +10694,7 @@ ${readmore}
 *││◦➛* ${prefix}listmsg
 *╰═════════════❍*
 
-*╭────❍* Store *❍*
+*╭────❍* 𝐒𝐭𝐨𝐫𝐞 *❍*
 *││◦➛* ${prefix}list
 *││◦➛* ${prefix}store
 *││◦➛* ${prefix}shop
@@ -10702,18 +10702,18 @@ ${readmore}
 *││◦➛* ${prefix}dellist
 *╰═════════════❍*
 
-*╭────❍* Religon *❍*
+*╭────❍* 𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧 *❍*
 *││◦➛* ${prefix}bible
 *││◦➛* ${prefix}quran
 *││◦➛* ${prefix}gita
 *╰═════════════❍*
 
-*╭────❍* Bug Menu *❍*
+*╭────❍* 𝐁𝐮𝐠 𝐌𝐞𝐧𝐮 *❍*
 *││◦➛* ${prefix}bug
 *││◦➛* ${prefix}gcbug
 *╰═════════════❍*
 
-*╭────❍* Other Menu *❍*
+*╭────❍* 𝐎𝐭𝐡𝐞𝐫 𝐌𝐞𝐧𝐮 *❍*
 *││◦➛* ${prefix}ping
 *││◦➛* ${prefix}alive
 *││◦➛* ${prefix}menu
@@ -10728,24 +10728,24 @@ ${readmore}
 *││◦➛* ${prefix}uptime
 *││◦➛* ${prefix}checkaccount
 *╰═════════════❍*
-> *Powered By MatrixPro©*`
+> *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐘 𝐌𝐚𝐭𝐫𝐢𝐱𝐏𝐫𝐨©*`
 if (typemenu === 'v1') {
   const axios = require('axios'); // Import axios inside the block
   
   const images = [
-    "https://i.ibb.co/JWBYb1nF/elitepro.jpg",
+    "https://i.ibb.co/MxQ3LVnN/thumb.jpg",
     "https://i.ibb.co/CNFGVhK/20250204-154801.jpg",
-    "https://i.ibb.co/fdWbdbFm/20250216-153528.jpg",
-    "https://i.ibb.co/xKSmsDG2/20250207-133529.jpg",
+    "https://i.ibb.co/wZHYdtD8/360-F-567935908-a-P2-VAGv-Kmy-Wdgbd-Xxfi-RKAvne-AMR1t-QU.jpg",
+    "https://i.ibb.co/5WPJvgQZ/5d157606578c11ee944abadf81d486ab-upscaled.jpg",
     "https://i.ibb.co/BVfhtnP7/0d641affa3bc40d54a2e260b2096a2f3.jpg",
     "https://i.ibb.co/Y4yMQnbN/3799d3f114e3a3c2209051d1af5ab9e8.jpg",
     "https://i.ibb.co/Y4Q1svn9/985dcc4c387f362bed2a97addd618c2c.jpg",
-    "https://i.ibb.co/q33F4m9N/def58cefbb19e51ffa60adb9279b0bed.jpg",
+    "https://i.ibb.co/Hf1hLKwp/ai-female-robot-face-future-generative-ai-431161-2651.jpg",
     "https://i.ibb.co/Wv3s7ygD/174a96d25be046da7b4571e439e8ba87.jpg",
     "https://i.ibb.co/HDFbNxTL/f8998b0b2ea04904e8e86a7035302d2f.jpg",
-    "https://i.ibb.co/v83nqmx/f1c2e4ad310f52bb94a6e3c7eaa07ff0.jpg",
+    "https://i.ibb.co/xKLtBcz6/ai-robot-portrait-fictional-beautiful-girl-with-artificial-intelligence-generative-ai-788189-2658.jpg",
     "https://i.ibb.co/nHHybkt/6ac87425597ad883ae48b941018237de.jpg",
-    "https://i.ibb.co/DHnhV9PH/4680c21a8f66d3719a3c322c7bc43e83.jpg",
+    "https://i.ibb.co/qFBKfvDF/Leonardo-Phoenix-A-stylish-brooding-man-in-his-mid30s-with-a-s-2.jpg",
     elitepropp
   ];
   
@@ -10883,7 +10883,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/HDFbNxTL/f8998b0b2ea04904e8e86a7035302d2f.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -10908,7 +10908,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/HDFbNxTL/f8998b0b2ea04904e8e86a7035302d2f.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -11019,7 +11019,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/HDFbNxTL/f8998b0b2ea04904e8e86a7035302d2f.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -11045,7 +11045,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/HDFbNxTL/f8998b0b2ea04904e8e86a7035302d2f.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -11109,7 +11109,7 @@ if (typemenu === 'v1') {
                 } else if (typemenu === 'v6') {
                     EliteProEmpire.relayMessage(m.chat,  {
                        requestPaymentMessage: {
-                          currencyCodeIso4217: 'INR',
+                          currencyCodeIso4217: 'GHS',
                           amount1000: '9999999900',
                           requestFrom: m.sender,
                           noteMessage: {
@@ -11156,7 +11156,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/HDFbNxTL/f8998b0b2ea04904e8e86a7035302d2f.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -11182,7 +11182,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/MxQ3LVnN/thumb.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -11246,7 +11246,7 @@ if (typemenu === 'v1') {
                 } else if (typemenu === 'v6') {
                     EliteProEmpire.relayMessage(m.chat,  {
                        requestPaymentMessage: {
-                          currencyCodeIso4217: 'INR',
+                          currencyCodeIso4217: 'GHS',
                           amount1000: '9999999900',
                           requestFrom: m.sender,
                           noteMessage: {
@@ -11293,7 +11293,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/V0GbhndJ/IMG-20250325-184737-515.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -11319,7 +11319,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/V0GbhndJ/IMG-20250325-184737-515.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -11383,7 +11383,7 @@ if (typemenu === 'v1') {
                 } else if (typemenu === 'v6') {
                     EliteProEmpire.relayMessage(m.chat,  {
                        requestPaymentMessage: {
-                          currencyCodeIso4217: 'INR',
+                          currencyCodeIso4217: 'GHS',
                           amount1000: '9999999900',
                           requestFrom: m.sender,
                           noteMessage: {
@@ -11430,7 +11430,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -11456,7 +11456,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/RpgrsBz0/Leonardo-Phoenix-A-stylish-brooding-man-in-his-mid30s-with-a-s-1.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -11520,7 +11520,7 @@ if (typemenu === 'v1') {
                 } else if (typemenu === 'v6') {
                     EliteProEmpire.relayMessage(m.chat,  {
                        requestPaymentMessage: {
-                          currencyCodeIso4217: 'INR',
+                          currencyCodeIso4217: 'GHS',
                           amount1000: '9999999900',
                           requestFrom: m.sender,
                           noteMessage: {
@@ -11567,7 +11567,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/HDFbNxTL/f8998b0b2ea04904e8e86a7035302d2f.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -11593,7 +11593,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/MxQ3LVnN/thumb.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -11657,7 +11657,7 @@ if (typemenu === 'v1') {
                 } else if (typemenu === 'v6') {
                     EliteProEmpire.relayMessage(m.chat,  {
                        requestPaymentMessage: {
-                          currencyCodeIso4217: 'INR',
+                          currencyCodeIso4217: 'GHS',
                           amount1000: '9999999900',
                           requestFrom: m.sender,
                           noteMessage: {
@@ -11704,7 +11704,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/MxQ3LVnN/thumb.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -11730,7 +11730,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/MxQ3LVnN/thumb.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -11794,7 +11794,7 @@ if (typemenu === 'v1') {
                 } else if (typemenu === 'v6') {
                     EliteProEmpire.relayMessage(m.chat,  {
                        requestPaymentMessage: {
-                          currencyCodeIso4217: 'INR',
+                          currencyCodeIso4217: 'GHS',
                           amount1000: '9999999900',
                           requestFrom: m.sender,
                           noteMessage: {
@@ -11841,7 +11841,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/V0GbhndJ/IMG-20250325-184737-515.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -11867,7 +11867,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/V0GbhndJ/IMG-20250325-184737-515.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -11931,7 +11931,7 @@ if (typemenu === 'v1') {
                 } else if (typemenu === 'v6') {
                     EliteProEmpire.relayMessage(m.chat,  {
                        requestPaymentMessage: {
-                          currencyCodeIso4217: 'INR',
+                          currencyCodeIso4217: 'GHS',
                           amount1000: '9999999900',
                           requestFrom: m.sender,
                           noteMessage: {
@@ -11978,7 +11978,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/V0GbhndJ/IMG-20250325-184737-515.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -12004,7 +12004,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/V0GbhndJ/IMG-20250325-184737-515.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -12115,7 +12115,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/V0GbhndJ/IMG-20250325-184737-515.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -12141,7 +12141,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/HDFbNxTL/f8998b0b2ea04904e8e86a7035302d2f.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -12205,7 +12205,7 @@ if (typemenu === 'v1') {
                 } else if (typemenu === 'v6') {
                     EliteProEmpire.relayMessage(m.chat,  {
                        requestPaymentMessage: {
-                          currencyCodeIso4217: 'INR',
+                          currencyCodeIso4217: 'GHS',
                           amount1000: '9999999900',
                           requestFrom: m.sender,
                           noteMessage: {
@@ -12252,7 +12252,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/V0GbhndJ/IMG-20250325-184737-515.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -12278,7 +12278,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -12342,7 +12342,7 @@ if (typemenu === 'v1') {
                 } else if (typemenu === 'v6') {
                     EliteProEmpire.relayMessage(m.chat,  {
                        requestPaymentMessage: {
-                          currencyCodeIso4217: 'INR',
+                          currencyCodeIso4217: 'GHS',
                           amount1000: '9999999900',
                           requestFrom: m.sender,
                           noteMessage: {
@@ -12389,7 +12389,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -12415,7 +12415,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/MxQ3LVnN/thumb.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -12479,7 +12479,7 @@ if (typemenu === 'v1') {
                 } else if (typemenu === 'v6') {
                     EliteProEmpire.relayMessage(m.chat,  {
                        requestPaymentMessage: {
-                          currencyCodeIso4217: 'INR',
+                          currencyCodeIso4217: 'GHS',
                           amount1000: '9999999900',
                           requestFrom: m.sender,
                           noteMessage: {
@@ -12526,7 +12526,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -12552,7 +12552,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -12663,7 +12663,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -12689,7 +12689,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -12800,7 +12800,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -12826,7 +12826,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -12937,7 +12937,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -12963,7 +12963,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -13074,7 +13074,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -13100,7 +13100,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -13211,7 +13211,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -13237,7 +13237,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -13301,7 +13301,7 @@ if (typemenu === 'v1') {
                 } else if (typemenu === 'v6') {
                     EliteProEmpire.relayMessage(m.chat,  {
                        requestPaymentMessage: {
-                          currencyCodeIso4217: 'INR',
+                          currencyCodeIso4217: 'GHS',
                           amount1000: '9999999900',
                           requestFrom: m.sender,
                           noteMessage: {
@@ -13348,7 +13348,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -13374,7 +13374,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/V0GbhndJ/IMG-20250325-184737-515.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -13438,7 +13438,7 @@ if (typemenu === 'v1') {
                 } else if (typemenu === 'v6') {
                     EliteProEmpire.relayMessage(m.chat,  {
                        requestPaymentMessage: {
-                          currencyCodeIso4217: 'INR',
+                          currencyCodeIso4217: 'GHS',
                           amount1000: '9999999900',
                           requestFrom: m.sender,
                           noteMessage: {
@@ -13485,7 +13485,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/V0GbhndJ/IMG-20250325-184737-515.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -13511,7 +13511,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/V0GbhndJ/IMG-20250325-184737-515.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -13575,7 +13575,7 @@ if (typemenu === 'v1') {
                 } else if (typemenu === 'v6') {
                     EliteProEmpire.relayMessage(m.chat,  {
                        requestPaymentMessage: {
-                          currencyCodeIso4217: 'INR',
+                          currencyCodeIso4217: 'GHS',
                           amount1000: '9999999900',
                           requestFrom: m.sender,
                           noteMessage: {
@@ -13622,7 +13622,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/V0GbhndJ/IMG-20250325-184737-515.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -13648,7 +13648,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/DHJj12Wc/1731476294736-3947sk-2-0.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -13712,7 +13712,7 @@ if (typemenu === 'v1') {
                 } else if (typemenu === 'v6') {
                     EliteProEmpire.relayMessage(m.chat,  {
                        requestPaymentMessage: {
-                          currencyCodeIso4217: 'INR',
+                          currencyCodeIso4217: 'GHS',
                           amount1000: '9999999900',
                           requestFrom: m.sender,
                           noteMessage: {
@@ -13759,7 +13759,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/HDFbNxTL/f8998b0b2ea04904e8e86a7035302d2f.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -13785,7 +13785,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/MxQ3LVnN/thumb.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -13849,7 +13849,7 @@ if (typemenu === 'v1') {
                 } else if (typemenu === 'v6') {
                     EliteProEmpire.relayMessage(m.chat,  {
                        requestPaymentMessage: {
-                          currencyCodeIso4217: 'INR',
+                          currencyCodeIso4217: 'GHS',
                           amount1000: '9999999900',
                           requestFrom: m.sender,
                           noteMessage: {
@@ -13896,7 +13896,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/svNLtkqf/20250128-021109.jpg',
+      thumbnailUrl: 'https://i.ibb.co/MxQ3LVnN/thumb.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -13922,7 +13922,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/svNLtkqf/20250128-021109.jpg",
+thumbnailUrl: "https://i.ibb.co/MxQ3LVnN/thumb.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
