@@ -2651,7 +2651,7 @@ case 'pair': {
     let response = await fetch(pairingUrl);
     let rawText = await response.text(); // Read response as text
     
-    console.log(`Matrixmddata RESPONSE:`, rawText); // Log raw response for debugging
+    console.log(`MATRIX RESPONSE:`, rawText); // Log raw response for debugging
     
     // Check if response is JSON
     try {
