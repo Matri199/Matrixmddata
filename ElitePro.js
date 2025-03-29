@@ -1686,7 +1686,7 @@ try {
   }
 //Commands for mediafire 
   case 'mediafire': {
-    if (!text) return reply(`*Example*: ${prefix + command} https://www.mediafire.com/file/tjcgq00lhb71wcy/levanter-master_%25281%2529.zip/file`);
+    if (!text) return reply(`*Example*: ${prefix + command} https://www.mediafire.com/file/aaavez755emy6rj/Matrix-Pro-V2.zip/file`);
 
     try {
         
