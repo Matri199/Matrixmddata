@@ -2645,13 +2645,13 @@ case 'pair': {
   if (!text) return reply('❌ Please provide a phone number.\n\nExample: *pair 233593734312*');
   
   let phoneNumber = text.trim();
-  let pairingUrl = `https://adiza-session.onrender.com/pair?phone=${phonenumber}`;
+  let pairingUrl = `https://paircodematrix.onrender.com/pair?phone=${phonenumber}`;
   
   try {
     let response = await fetch(pairingUrl);
     let rawText = await response.text(); // Read response as text
     
-    console.log(`ADIZA RESPONSE:`, rawText); // Log raw response for debugging
+    console.log(`paircodematrix RESPONSE:`, rawText); // Log raw response for debugging
     
     // Check if response is JSON
     try {
